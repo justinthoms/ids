@@ -1,4 +1,4 @@
-# ids
+# Telegram Index
 
 > Python Web App which indexes a telegram channel(or a chat) and serves its files for download.
 
