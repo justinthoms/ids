@@ -1,0 +1,4 @@
+aiohttp
+aiohttp-jinja2
+git+https://github.com/LonamiWebs/Telethon.git
+cryptg
