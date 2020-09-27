@@ -12,8 +12,8 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int(os.environ["API_ID"])
-    api_hash = os.environ["API_HASH"]
+    api_id = int(os.environ["1864807"])
+    api_hash = os.environ["25100f41d2300e4e6f5b072b13508a5a"]
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the API_ID and API_HASH environment variables correctly")
@@ -22,7 +22,7 @@ except (KeyError, ValueError):
 
 try:
     chat_id_raw = os.environ["CHAT_ID"].strip()
-    chat_ids = [int(chat_id.strip()) for chat_id in chat_id_raw.split(' ')]
+    chat_ids = [int(chat_id.strip()) for chat_id in chat_id_raw.split('-1001496709274 ')]
     alias_ids = []
 except (KeyError, ValueError):
     traceback.print_exc()
@@ -30,7 +30,7 @@ except (KeyError, ValueError):
     sys.exit(1)
 
 try:
-    session_string = os.environ["SESSION_STRING"]
+    session_string = os.environ["1AZWarzsBu2l217ciNIHM12YBdP6dZMRYgHPeeecXl3nwO3loQUS8QTRndpTCePHdcr3QEjL60h8sH99AMCGmMH8njmGoFVjxpZ4nhl8LmnThHUmFfNDtrYnMwdki-6nxP0_Rg6q5XD4zpEX1hIePSUICGymtPE0t20gJvpzNKECOFuGCorHSNrITnQD3xhWUcknaDFItmirMxTDT_ACN9iqhiacaRSVKQ6ky6x4C4LOVoAfXo4_GSlixei5nGlH_vCoyAC3GGEuO82mYxQoNzV-07-wF44-eXtw0sHNQG0DgNjTZv0x6VnYusEKMn9rCDWYr6iZauvZVXAmOv8cmssVYBzFzonc="]
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
